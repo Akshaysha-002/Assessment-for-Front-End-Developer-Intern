@@ -8,7 +8,7 @@ import tagger from "@dhiwise/component-tagger";
 export default defineConfig({
   plugins: [react(),tagger()],
   build: {
-    outDir: "build",
+    outDir:  "dist",  //"build",
   },
   resolve: {
     alias: {
@@ -21,9 +21,10 @@ export default defineConfig({
     },
   },
   server: {
-    port: "4028",
+    port: 4028,
     host: "0.0.0.0",
     strictPort: true,
     allowedHosts: ['.amazonaws.com', '.builtwithrocket.new']
   }
 });
+// vite.config.js
